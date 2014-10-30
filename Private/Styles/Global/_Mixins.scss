@@ -1,0 +1,27 @@
+// For responsive
+$tablet: "(max-width: #{$tablet})";
+$mobile: "(max-width: #{$mobile})";
+
+@mixin tablet() {
+	@media #{$tablet} {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media #{$mobile} {
+		@content;
+	}
+}
+// generic transform
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}

@@ -1,0 +1,178 @@
+header {
+	button.btn-responsive-nav {
+		background: $color-website;
+		@include mobile {
+			top: 38px;
+		}
+	}
+	h1 {
+		&.logo {
+			img {
+				@include tablet {
+					max-width: $width-full!important;
+					height: auto;
+				}
+			}
+		}
+	}
+	nav {
+		ul {
+			&.nav {
+				> li {
+					> a {
+						&:hover,
+						&:focus {
+							background: $color-website;
+							color: $color-white;
+						}
+					}
+				}
+			}
+			&.nav-main {
+				li {
+					ul {
+						&.dropdown-menu {
+							color: $color-white;
+							text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+							background-color: $color-website !important;
+							border-color: #0044cc #0044cc #002a80;
+							border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+							li {
+								&:hover {
+									a {
+										background-color: $color-website !important;
+										border-color: $color-website;
+									}
+								}
+							}
+							&:active,
+							&:focus {
+								border-color: $color-website;
+								background-color: $color-website;
+							}
+						}
+					}
+					&.dropdown {
+						&.open {
+							a {
+								&.dropdown-toggle {
+									color: $color-white;
+									background-color: $color-website !important;
+								}
+							}
+						}
+						&:hover {
+							a {
+								color: $color-white;
+								background-color: $color-website !important;
+							}
+							ul {
+								&.dropdown-menu {
+									li {
+										> a {
+											background: none !important;
+											&:hover {
+												background: $color-website !important;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					&.active {
+						a {
+							color: $color-white;
+							background-color: $color-website !important;
+							&:hover {
+								color: $color-white;
+								background-color: $color-website !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.single-menu {
+		nav {
+			ul {
+				&.nav-main {
+					li {
+						&.active {
+							> a {
+								border-top: 5px solid $color-website;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.darken-top-border {
+		border-top: 5px solid $color-website;
+	}
+	&.colored {
+		div {
+			&.header-top {
+				background-color: $color-website;
+				ul {
+					&.nav-top {
+						li {
+							a:hover {
+								background-color: $color-website !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.flat-menu {
+		nav {
+			ul {
+				&.nav-main {
+					li {
+						> a {
+							color: $color-dark;
+							&:hover {
+								color: $color-white;
+								background-color: $color-website !important;
+							}
+						}
+						&.active {
+							> a {
+								color: $color-dark;
+								color: $color-website;
+								background-color: transparent !important;
+							}
+						}
+						&.dropdown {
+							&:hover {
+								a {
+									color: $color-white;
+									background-color: $color-website !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			&.mega-menu {
+				ul {
+					&.nav-main {
+						li {
+							&.mega-menu-item {
+								ul {
+									&.dropdown-menu {
+										border-top-color: $color-website;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

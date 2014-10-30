@@ -1,0 +1,11 @@
+{
+	"name": "neosbox",
+	"version": "0.0.1",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-contrib-compass": "latest",
+        "grunt-contrib-concat": "latest"
+	}
+}

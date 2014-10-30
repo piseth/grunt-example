@@ -1,0 +1,86 @@
+/*
+	Add here all your CSS customizations
+------------------------------------------*/
+.form-control {
+	height: 34px;
+	padding: 6px 12px;
+}
+
+.list-unstyled ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+div.google-map {
+	min-height: 405px;
+	margin: 0;
+}
+
+/*
+	Project detail
+------------------------------------------*/
+.taller p {
+	margin-bottom: 40px;
+}
+
+/*
+	Style from backend
+------------------------------------------*/
+.main {
+	.typo3-neos-nodetypes-textwithimage {
+		clear: both;
+		img {
+			margin-bottom: 10px;
+			margin-top: 10px;
+			@include mobile {
+				width: 100%;
+				height: auto;
+				margin-top: 0;
+			}
+		}
+		figure {
+			@include mobile {
+				padding: 0;
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+	.typo3-neos-nodetypes-image {
+		clear: both;
+		img {
+			margin-bottom: 10px;
+			margin-top: 10px;
+			@include mobile {
+				width: 100%;
+				height: auto;
+				margin-top: 0;
+			}
+		}
+		figure {
+			@include mobile {
+				padding: 0;
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+	.typo3-neos-alignment-center {
+		text-align: center;
+	}
+
+	.typo3-neos-alignment-left {
+		float: left;
+		padding-right: 15px;
+	}
+
+	.typo3-neos-alignment-right {
+		float: right;
+		padding-left: 15px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
